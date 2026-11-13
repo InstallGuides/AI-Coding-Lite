@@ -1,23 +1,13 @@
-# Secrets — never commit these
+# Secrets: never commit these
 .env
 
-# Python (uv)
+# The Finder's view settings for each folder
+.DS_Store
+
+# Python: the project environment uv creates, and Python's caches
 .venv/
 __pycache__/
-*.pyc
 
-# Node (mise)
+# Node and Rust, if you port the example with the rewrite-in-language skill
 node_modules/
-
-# Rust (cargo)
 target/
-
-# Build output
-dist/
-build/
-
-# Logs
-*.log
-
-# macOS
-.DS_Store

@@ -1,10 +1,3 @@
----
-- Version: 1
-- Date: 2026-06-20
-- Author: Set Up Your Mac
-- Depends on: none
----
-
 # SPEC-NNN: &lt;short title&gt;
 
 **Status:** draft
@@ -25,7 +18,7 @@ What should it do, concretely? List the steps or rules.
 
 ## Done when (acceptance)
 
-How will you know it's finished and working?
+How will you know it's finished and working? If you can, describe a check the assistant can run, such as a command and the output you expect.
 
 - [ ] ...
 

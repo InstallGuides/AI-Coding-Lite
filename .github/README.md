@@ -1,14 +1,18 @@
 # AI-Coding-Lite
 
+Using your own copy? Open `README.md` in this folder to start.
+
 A small starter for building software with an AI assistant, the spec-driven way: you decide, write it down, then build. It has one worked example from idea to running code, numbered folders for research, decisions, specifications and playbooks, and skills that help Claude or Codex keep notes between sessions.
+
+*Step 2 of 3: plan before you build, with a small worked example. Next: [AI-Coding-Complete](https://github.com/InstallGuides/AI-Coding-Complete).*
 
 It's one of the example projects from [Mac Install Guide](https://mac.install.guide/developer-setup/starter-project).
 
 ## Get it
 
-**With a Set Up Your Mac app.** The Set Up Your Mac apps create this project in `~/Projects/AI-Coding-Lite` for people who write code, after they set up the Mac. See [Set Up Your Mac](https://mac.install.guide/set-up-your-mac/).
+**With an app.** The [Set Up Your Mac](https://mac.install.guide/set-up-your-mac/) apps create this project for people who write code, after they set up the Mac. In the Yaxed editor, choose **File > New Project**.
 
-**Without an app.** Click **Use this template** above to make your own copy on GitHub, or download the `.zip` from the latest release and unzip it into a folder of your own.
+**Without an app.** Make your own copy on GitHub with **Use this template**, or download the `.zip` from the latest release and unzip it into a folder of your own.
 
 ## Use it
 

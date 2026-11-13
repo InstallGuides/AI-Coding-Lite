@@ -1,13 +1,8 @@
----
-- Version: 1
-- Date: 2026-06-20
-- Author: Set Up Your Mac
-- Depends on: 2-decisions/EDR-001-example-decision.md
----
-
 # SPEC-001: Hello, world
 
 **Status:** done
+
+Builds on: `2-decisions/ADR-001-example-decision.md`
 
 ## Goal
 
@@ -15,7 +10,7 @@ A tiny program that prints a friendly greeting, so the project has one working, 
 
 ## Why
 
-To demonstrate the decide → spec → playbook → build → track loop end to end with the smallest possible feature.
+To show the decide → spec → playbook → build → track loop end to end with the smallest possible feature.
 
 ## Behavior
 
@@ -29,5 +24,5 @@ To demonstrate the decide → spec → playbook → build → track loop end to 
 
 ## Out of scope
 
-- Greeting the user by name — that's a great SPEC-002 to try next.
+- Greeting the user by name. That's a good SPEC-002 to try next.
 - Any input, files, or network access.

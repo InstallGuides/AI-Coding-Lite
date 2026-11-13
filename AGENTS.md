@@ -1,51 +1,43 @@
 # Working in this project
 
-This is **AI-Coding-Lite**, a starter that practices **spec-driven development** with a real project structure (the same shape the Set Up Your Mac team uses, scaled down). Help the user keep the discipline — it's the point of this folder.
+This is **AI-Coding-Lite**, a small project for practicing **spec-driven development** with an AI assistant: decide and write down what to build, then build it. The user may be new to coding. Help them keep the habit; it's the point of this folder.
 
-## Why the discipline matters
+## How to help here
 
-You have no memory of past sessions: you know only what's written in this folder (this file, the specs, decisions, playbooks, and `0-project-management/work-ledger/`) plus the current conversation. And your context can fill up on a long task, after which your quality degrades. So the **written artifacts are the project's memory** — read the relevant ones before acting, and keep them current so the next session (or a different assistant) can continue coherently.
+- Explain what you're about to do in plain language before you do it, and work in small steps.
+- Prefer the simplest thing that works. Don't introduce tools or frameworks unless asked.
+- Ask before installing software, deleting files, or running anything that changes the system.
+- Define any technical term the first time you use it.
 
-## What this file is
+## How this project works
 
-`AGENTS.md` holds the guidance. Codex and the Warp agent read it directly; `CLAUDE.md` is the single line `@AGENTS.md`, which makes Claude read this same file. Put instructions here; `CLAUDE.md` only points to it.
+You remember nothing between conversations, so the files here are the project's memory. Read the relevant ones before you act, and keep them current.
 
-## The loop (and the skills that guide it)
+- **The loop:** plan (`plan`), decide (`new-decision`), write a spec (`new-spec`), write a playbook (`new-playbook`), build from it (`run-playbook`), preserve the work (`preserve-our-work`). Each has a skill.
+- **Implement specs, nothing more.** Don't write code without an agreed spec. If a spec is wrong, fix the spec and confirm with the user, then code.
+- **Folders:** `0-project-management/` (the overview, and handoff notes in `work-ledger/`), `1-research/`, `2-decisions/` (ADRs: architecture decision records), `3-specifications/` (`SPEC-NNN-name.md`), `4-playbooks/` (`PB-NNN-name.md`), `source/` (the code).
+- **Documents** start with a title and a `**Status:**` line.
+- **Changelog entries** are one to three sentences on what changed and in which files. The reasoning goes in the handoff note.
+- **Dates:** check today's date with `date` before writing one. A conversation can run past midnight.
+- **The example** runs with `uv run source/hello.py`. The `rewrite-in-language` skill ports it to another language.
 
-1. **Plan** (`plan`) — keep `0-project-management/overview.md` current: what, why, roadmap, status.
-2. **Decide** (`new-decision`) — record real choices and *why* in `2-decisions/`.
-3. **Write a spec** (`new-spec`) — a spec in `3-specifications/` before building. Don't code without an agreed spec.
-4. **Write a playbook** (`new-playbook`) — usually a plan and task list from an agreed spec, handed to the session that builds it; or a procedure the user repeats (run, test, release). Both go in `4-playbooks/`.
-5. **Execute a playbook** (`run-playbook`) — build from it one task at a time, code in `source/`, or run its procedure; update it if reality has drifted.
-6. **Preserve our work** (`preserve-our-work`) — update `CHANGELOG.md` and write a `0-project-management/work-ledger/` handoff note when finishing a chunk.
+## Before you change anything: Git
 
-Implement specs, nothing more; if a spec is wrong, fix the spec and confirm, then code. Explain as you go, in small steps, and define any technical term the first time you use it. Prefer the simplest thing that works; ask before installing global software or deleting files.
+If this folder isn't under Git yet (it has no `.git` folder), offer to set it up before you change anything: run `git init` and make a first commit of the files as they are. Explain that a commit is a saved snapshot the user can go back to. Ask before each commit, stage files by name, and never commit a `.env` file. After each finished task, offer to commit.
 
-## The structure
+## Tools on this Mac
 
-- `0-project-management/` — `overview.md` + `work-ledger/` (handoff notes).
-- `1-research/` — what was learned before deciding.
-- `2-decisions/` — decision records (EDR/ADR).
-- `3-specifications/` — one spec per feature (`SPEC-NNN-name.md`).
-- `4-playbooks/` — plans and task lists, and repeated procedures (`PB-NNN-name.md`).
-- `source/` — the code.
-- `CHANGELOG.md` — dated log of changes.
-- `.claude/skills/` — `plan`, `new-decision`, `new-spec`, `new-playbook`, `run-playbook`, `preserve-our-work`, `rewrite-in-language`.
+Check what is installed (for example `uv --version`) before you install anything, and ask first.
 
-## Conventions
+## Secrets
 
-- **Frontmatter:** every `.md` in the numbered folders starts with a `Version / Date / Author / Depends on` block. Maintain it — bump Version, set Date on substantive edits.
-- **Secrets:** API keys go in the user's `~/.env` (loaded by the terminal) — never in code, committed files, or chat. `.gitignore` excludes `.env`.
-- **Toolchain:** if `~/.claude/CLAUDE.md` or `~/.codex/AGENTS.md` has a "Development environment (Set Up Your Mac)" section, it documents the toolchain; otherwise check what is installed. The example is Python (`uv run source/hello.py`); `rewrite-in-language` ports it to Node/Ruby/Java/Rust.
-- **Changelog entries:** one to three sentences on what changed and in which files; the reasoning goes in the work-ledger note.
-- **Dates:** check today's date with `date` before writing one — a conversation can run past midnight.
-- **Commits:** stage files by name (`git add <file>`), never `git add -A`, and never commit `.env`.
+API keys and other secrets go in the user's `~/.env` file, never in code, committed files or chat. This folder's `.gitignore` leaves out `.env` as a safety net.
 
 ## Keeping this file useful
 
 This file is how you remember this project between conversations, so keep it short and current:
 
-- **When the user corrects you on something that will come up again, offer to add one line here** — the rule, not the story behind it.
+- **When the user corrects you on something that will come up again, offer to add one line here.** Write the rule, not the story behind it.
 - **Keep it to a page or two.** Longer material goes in its own file, with one line here saying when to read it.
-- **Before stopping mid-task, offer to write a handoff note in `0-project-management/work-ledger/`** (the `preserve-our-work` skill does this).
-- **Write down facts that are easy to get wrong** — a version, an account name — as a rule plus a link to where the detail lives, not the whole story, dated when you checked the real value.
+- **Before stopping mid-task, offer to write a handoff note** in `0-project-management/work-ledger/` (the `preserve-our-work` skill does this).
+- **Write down facts that are easy to get wrong**, such as a version or an account name, as one line here with the date you checked.
