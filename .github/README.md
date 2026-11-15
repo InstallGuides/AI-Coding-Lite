@@ -4,7 +4,7 @@ Using your own copy? Open `README.md` in this folder to start.
 
 A small starter for building software with an AI assistant, the spec-driven way: you decide, write it down, then build. It has one worked example from idea to running code, numbered folders for research, decisions, specifications and playbooks, and skills that help Claude or Codex keep notes between sessions.
 
-*Step 2 of 3: plan before you build, with a small worked example. Next: [AI-Coding-Complete](https://github.com/InstallGuides/AI-Coding-Complete).*
+*Plan before you build, with a small worked example. Related: [AI-Coding-Complete](https://github.com/InstallGuides/AI-Coding-Complete).*
 
 It's one of the example projects from [Mac Install Guide](https://mac.install.guide/developer-setup/starter-project).
 

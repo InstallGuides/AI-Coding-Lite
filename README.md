@@ -2,7 +2,7 @@
 
 This folder teaches a calmer, more reliable way to build software with an AI assistant: **spec-driven development**. You decide what to build and why, write it down, and then build it, so the plan outlives any one conversation.
 
-*Step 2 of 3: plan before you build, with a small worked example. Next: [AI-Coding-Complete](https://github.com/InstallGuides/AI-Coding-Complete).*
+*Plan before you build, with a small worked example. Related: [AI-Coding-Complete](https://github.com/InstallGuides/AI-Coding-Complete).*
 
 ## Open this folder with your AI assistant
 
