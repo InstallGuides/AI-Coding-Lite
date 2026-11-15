@@ -19,7 +19,7 @@ You remember nothing between conversations, so the files here are the project's 
 - **Documents** start with a title and a `**Status:**` line.
 - **Changelog entries** are one to three sentences on what changed and in which files. The reasoning goes in the handoff note.
 - **Dates:** check today's date with `date` before writing one. A conversation can run past midnight.
-- **The example** runs with `uv run source/hello.py`. The `rewrite-in-language` skill ports it to another language.
+- **Python and uv:** the example, `source/hello.py`, is in Python and runs with uv. Use `uv run source/hello.py`, never bare `python`, and add packages with `uv add`, never `pip install`. If the person prefers another language, the `rewrite-in-language` skill ports the project.
 
 ## Before you change anything: Git
 

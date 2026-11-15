@@ -39,7 +39,9 @@ This folder already holds one trip around the loop. Read the files in this order
 
 ## Run the example
 
-In a terminal in this folder, type `uv run source/hello.py`. If the terminal says `command not found: uv`, [install uv](https://mac.install.guide/python/install-uv) first. Prefer another language? Ask *"rewrite the hello example in Rust"*. The `rewrite-in-language` skill ports it to Node, Ruby, Java or Rust.
+This project uses the Python programming language, but you can ask an AI agent to switch the project to a language you prefer, such as *"rewrite the hello example in Rust"*. The `rewrite-in-language` skill ports it to Node, Ruby, Java or Rust.
+
+To run it, open a terminal in this folder and type `uv run source/hello.py`. If the terminal says `command not found: uv`, [install uv](https://mac.install.guide/python/install-uv) first.
 
 ## The instruction files
 
